@@ -1,0 +1,23 @@
+.home-articles{
+    position: relative;
+    width: 100%;
+    padding: 0 2.5% 2rem 2.5%;
+    display: flex;    
+    overflow-x: auto;
+    margin-top: -50px;
+    @include respond-to('small'){
+        flex-wrap: wrap;
+        overflow-x: initial;
+        flex-flow: row;
+    }
+    
+    .article-item{
+        min-width: 90%;
+        max-width: 400px;
+        @include respond-to('small'){
+            min-width: 200px;
+            width: 75%;
+            max-width: initial;
+        }
+    }
+}

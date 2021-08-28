@@ -1,0 +1,18 @@
+$primary-gray: #ebebeb;
+$secondary-gray: #c7c7c7;
+$terthary-gray: #7f7f7f;
+$colorNav: #595959;
+
+// mq breakpoints.
+$breakpoints: (
+	'mobile-max':  ( max-width:  420px ),
+	'mobile':  ( min-width:  420px ),
+	'extra-small':  ( min-width:  576px ),
+	'extra-small-max':  ( max-width:  576px ),
+  'small':  ( min-width:  767px ),
+	'small-max':  ( max-width:  767px ),
+  'medium': ( min-width:  992px ),
+	'medium-max': ( max-width:  992px ),
+  'large':  ( min-width: 1200px ),
+	'large-max':  ( max-width: 1200px )
+) !default;

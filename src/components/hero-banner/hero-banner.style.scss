@@ -1,0 +1,45 @@
+.hero-banner{
+    width: 100%;
+    height: 400px;
+    background-color: $primary-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-bottom: 4px solid $secondary-gray;
+    @include respond-to('small'){
+        padding: 1rem 15vw;
+        justify-content: flex-start;
+        height: 500px;
+    }
+    &__container{
+        max-width: 100%;
+        margin: 0 1rem;
+        @include respond-to('small'){
+            max-width: 800px;
+            margin: 0;
+        }
+        h1{
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            @include respond-to('extra-small'){
+                font-size: 1.75rem;
+            }
+            @include respond-to('small'){
+                font-size: 2rem;
+            }
+            span{
+                display: block;
+                font-size: 2rem;
+                @include respond-to('extra-small'){
+                    font-size: 3rem;
+                }
+                @include respond-to('small'){
+                    font-size: 4rem;
+                }
+                
+            }
+        }
+    }
+}

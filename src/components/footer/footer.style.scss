@@ -1,0 +1,25 @@
+footer{
+    border-top: 4px solid #000;
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem 0 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    @include respond-to('small'){
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    p{
+        margin: 5px 0;
+        @include respond-to('small'){
+            margin: 0;
+        }
+        a, strong{
+            color: #000;
+            font-weight: bold;
+        }
+    }
+    
+}
